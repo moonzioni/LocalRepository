@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 테스트 페이지에 오신 것을 환영합니다!</h1>
+        
+        <div class="test-section">
+            <h2>섹션 1: 기본 테스트</h2>
+            <p>이것은 테스트용 HTML 페이지입니다.</p>
+            <button onclick="handleClick()">클릭해보세요</button>
+        </div>
+
+        <div class="test-section">
+            <h2>섹션 2: 리스트</h2>
+            <ul>
+                <li>HTML 테스트</li>
+                <li>CSS 테스트</li>
+                <li>JavaScript 테스트</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h2>섹션 3: 입력 필드</h2>
+            <input type="text" placeholder="텍스트를 입력하세요" id="testInput">
+            <button onclick="printInput()">입력값 출력</button>
+        </div>
+    </div>
+
+    <script>
+        function handleClick() {
+            alert('안녕하세요! 버튼이 클릭되었습니다.');
+        }
+
+        function printInput() {
+            const input = document.getElementById('testInput').value;
+            console.log('입력된 값:', input);
+            alert('콘솔에 입력값이 출력되었습니다: ' + input);
+        }
+    </script>
+</body>
+</html>
